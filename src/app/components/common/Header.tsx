@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ThemeToggle } from './ThemeToggle'
+import SearchInput from './SearchInput'
+import GenreDropdown from './GenreDropdown'
 
 const Header = () => {
   return (
@@ -16,9 +18,8 @@ const Header = () => {
       </Link>
 
       <div className='flex space-x-2'>
-        {/* GenreDropdown */}
-        {/* SearchInput */}
-        {/* Themtoggler */}
+        <GenreDropdown />
+        <SearchInput />
         <ThemeToggle />
       </div>
     </header>
