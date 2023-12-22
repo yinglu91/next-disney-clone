@@ -33,7 +33,7 @@ export const getUpcomingMovies = async (): Promise<Movie[]> => {
 }
 
 export const getTopRatedMovies = async (): Promise<Movie[]> => {
-  const url = new URL('https://api.themoviedb.org/3/movie/to_rated')
+  const url = new URL('https://api.themoviedb.org/3/movie/top_rated')
   return fetchFromTMDB(url)
 }
 

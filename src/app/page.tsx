@@ -4,6 +4,8 @@ import {
   getTopRatedMovies,
   getPopularMovies,
 } from '@/lib/getMovies'
+import MoviesCarouselVertical from '@/app/components/movies/MoviesCarouselVertical'
+import CarouselBannerWrapper from '@/app/components/movies/CarouselBannerWrapper'
 
 // http://localhost:3000
 export default async function Home() {
@@ -13,9 +15,7 @@ export default async function Home() {
 
   return (
     <main>
-      <h1>let build disney</h1>
-
-      {/* CarouselBannerWrapper */}
+      <CarouselBannerWrapper />
 
       <div className='flex flex-col space-y-2 xl:-mt-48'>
         <MoviesCarousel
