@@ -45,7 +45,7 @@ export const getPopularMovies = async (): Promise<Movie[]> => {
 export const getDiscoverMovies = async (id?: string, keywords?: string) => {
   const url = new URL('https://api.themoviedb.org/3/discover/movie')
 
-  id && url.searchParams.set('with_genre', id)
+  id && url.searchParams.set('with_genres', id)
 
   if (keywords) {
     url.searchParams.set('with_keywords', keywords)
