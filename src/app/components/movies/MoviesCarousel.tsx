@@ -13,9 +13,7 @@ const MoviesCarousel = ({ title, movies }: Props) => {
       <h2 className='text-xl font-bold px-10 py-2'>{title}</h2>
 
       <div
-        className={cn(
-          'flex space-x-4 overflow-scroll px-5 lg:px-10 py-5 scrollbar-hide'
-        )}
+        className={cn('flex space-x-4 overflow-y-scroll  px-5 lg:px-10 py-5')}
       >
         {movies?.map((movie) => (
           <MovieCard
@@ -29,3 +27,4 @@ const MoviesCarousel = ({ title, movies }: Props) => {
 }
 
 export default MoviesCarousel
+// 1:56:00 scrollbar-hide not work
